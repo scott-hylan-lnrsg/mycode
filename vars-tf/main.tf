@@ -21,8 +21,8 @@ resource "docker_container" "nginx" {
   # name  = "tutorial"
   name = var.container_name
   ports {
-    internal = var.internal_port 
-    external = var.external_port
+    internal = 80
+    external = 2224
   }
 }
 
